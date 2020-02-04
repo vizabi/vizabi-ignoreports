@@ -1,0 +1,31 @@
+{
+  "name": "vizabi-ignoreports",
+  "version": "0.0.0",
+  "description": "Igno reports tool for vizabi",
+  "scripts": {
+    "link": "npm link ../vizabi-shared-components",
+    "start": "rollup -c",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "deploy": "tool-deploy"
+  },
+  "main": "build/ignoreports.js",
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vizabi/vizabi-ignoreports.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vizabi/vizabi-ignoreports/issues"
+  },
+  "homepage": "https://github.com/vizabi/vizabi-ignoreports#readme",
+  "devDependencies": {
+    "cross-env": "^5.0.0",
+    "vizabi-shared-components": "../vizabi-shared-components",
+    "vizabi-tool-bundler": "github:vizabi/vizabi-tool-bundler#switch_to_rollup"
+  }
+}
